@@ -1,0 +1,94 @@
+
+
+/* Style for user navigation bar */
+.usernav {
+    background-color: #673AB7; /* Set your desired background color */
+    color: white; /* Set text color */
+    padding: 10px 0; /* Adjust padding as needed */
+
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Set a maximum width for the container if needed */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add horizontal padding to the container */
+}
+
+.logo {
+    margin: 0;
+}
+
+.globalsearch {
+    display: flex;
+    align-items: center;
+}
+
+.globalsearch select,
+.globalsearch input[type="text"],
+.globalsearch input[type="submit"] {
+    margin-right: 10px;
+}
+
+.globalsearch input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.755);
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 400px;
+}
+
+.globalsearch input[type="submit"] {
+    background-color: #9575CD; /* Purple button color */
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.globalsearch input[type="submit"]:hover {
+    background-color: #7E57C2; /* Darker purple on hover */
+}
+.bar img {
+    width: 40px; /* Set width for the user profile image */
+    height: 40px; /* Set height for the user profile image */
+    border-radius: 50%; /* Make the image circular */
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-details {
+    max-width: 400px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}

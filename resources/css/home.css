@@ -1,0 +1,213 @@
+body {
+   background-color: #dbdadec5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Style for user navigation bar */
+.usernav {
+    background-color: #673AB7; /* Set your desired background color */
+    color: white; /* Set text color */
+    padding: 10px 0; /* Adjust padding as needed */
+
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Set a maximum width for the container if needed */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add horizontal padding to the container */
+}
+
+.logo {
+    margin: 0;
+}
+
+.globalsearch {
+    display: flex;
+    align-items: center;
+}
+
+.globalsearch select,
+.globalsearch input[type="text"],
+.globalsearch input[type="submit"] {
+    margin-right: 10px;
+}
+
+.globalsearch input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.755);
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 400px;
+}
+
+.globalsearch input[type="submit"] {
+    background-color: #9575CD; /* Purple button color */
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.globalsearch input[type="submit"]:hover {
+    background-color: #7E57C2; /* Darker purple on hover */
+}
+.bar img {
+    width: 40px; /* Set width for the user profile image */
+    height: 40px; /* Set height for the user profile image */
+    border-radius: 50%; /* Make the image circular */
+}
+
+
+/* Style for left bar */
+.left-bar {
+    width: 200px;
+    height: 400px;
+    background-color: white;
+    float: left;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 50px;
+
+    /* Use an appropriate font-family */
+    font-size: 20px;
+    color: #333;
+    font-weight: bolder;
+}
+.left-bar a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+}
+.left-bar a:hover {
+    color: #673AB7;
+}
+
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* Style for Create Post Form */
+.createpost {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.createpost h2 {
+    color: #673AB7;
+    margin-bottom: 10px;
+}
+
+.createpost textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.createpost label img {
+    width: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.createpost input[type="file"] {
+    display: none;
+}
+
+.createpost input[type="submit"] {
+    background-color: #673AB7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Style for News Feed Posts */
+.post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.post h3 {
+    color: #673AB7;
+    margin-bottom: 10px;
+}
+
+.post p {
+    margin-bottom: 20px;
+}
+
+.newsfeed h1{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+/* Style for Public Checkbox */
+#createpost .public {
+    float: right;
+    color: #673AB7;
+    font-weight: bold;
+}
+
+#createpost .public input[type="checkbox"] {
+    display: none;
+}
+
+#createpost .public input[type="checkbox"] + label {
+    cursor: pointer;
+}
+
+#createpost .public input[type="checkbox"] + label:before {
+    content: '\2713';
+    display: inline-block;
+    font-size: 16px;
+    color: #673AB7;
+    margin-right: 5px;
+}
+
+/* Style for Image Preview */
+#createpost #preview {
+    max-width: 100%;
+    display: none;
+    margin-top: 10px;
+}

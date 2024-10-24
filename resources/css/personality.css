@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #673AB7;
+    text-align: center;
+    padding: 50px;
+    overflow: hidden;
+    position: relative;
+    animation: sparkles 1.5s infinite linear;
+}
+
+@keyframes sparkles {
+    0% { background-position: -200px -200px; }
+    100% { background-position: calc(100% + 200px) calc(100% + 200px); }
+}
+
+.profile-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.profile-info h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.personality-type {
+    font-size: 24px;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.personality-image {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* ... (Your existing CSS styles) ... */
+
+.arrow-button {
+    width: 70px;
+    height: 30px; /* Specify the path to your arrow icon image */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: white;
+    color:#673AB7;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}

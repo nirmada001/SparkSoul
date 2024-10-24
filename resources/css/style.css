@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-family: Fontin, Arial, Verdana;
+    font-size: 18px;
+    position: relative;
+    background: linear-gradient(rgba(10, 5, 15, 0.781),rgba(14, 2, 19, 0.616)),url(https://images.pexels.com/photos/4342427/pexels-photo-4342427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
