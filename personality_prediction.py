@@ -12,14 +12,8 @@ df = pd.read_sql(query, connection)
 # Close the database connection
 connection.close()
 
-# Data Preprocessing (You can customize this based on your data)
-# For example, drop unnecessary columns and handle missing values
-# df = df.drop(['unnecessary_column'], axis=1)
-# df = df.dropna()
 
-# Assuming 'kmeans' is your trained KMeans model
-# If you haven't trained the model, you need to train it first using appropriate data
-kmeans = KMeans(n_clusters=5)  # You can adjust the number of clusters as needed
+kmeans = KMeans(n_clusters=5) #number of clusters
 kmeans.fit(df)
 
 # Predict cluster label for the last record
